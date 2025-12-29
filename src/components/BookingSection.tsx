@@ -9,16 +9,6 @@ const sessionTypes = [
   { value: "follow-up", label: "Follow-Up 🚀 (40 Robux)" },
 ];
 
-const timeSlots = [
-  "4:30 PM AEDT",
-  "5:00 PM AEDT",
-  "5:30 PM AEDT",
-  "6:00 PM AEDT",
-  "6:30 PM AEDT",
-  "7:00 PM AEDT",
-  "7:30 PM AEDT",
-  "8:00 PM AEDT",
-];
 
 export const BookingSection = () => {
   const { toast } = useToast();
@@ -197,20 +187,15 @@ export const BookingSection = () => {
               <label className="block text-sm font-medium text-foreground mb-2">
                 Preferred Time (AEDT) *
               </label>
-              <select
+              <input
+                type="text"
                 name="preferredTime"
                 value={formData.preferredTime}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-lg bg-secondary/50 border border-border text-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
-              >
-                <option value="">Select a time slot</option>
-                {timeSlots.map((slot) => (
-                  <option key={slot} value={slot}>
-                    {slot}
-                  </option>
-                ))}
-              </select>
+                placeholder="e.g. 5:00 PM AEDT"
+                className="w-full px-4 py-3 rounded-lg bg-secondary/50 border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300"
+              />
             </div>
 
             {/* Notes */}

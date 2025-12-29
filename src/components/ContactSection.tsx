@@ -29,17 +29,17 @@ export const ContactSection = () => {
               <span className="text-foreground font-medium">LuhvReuben</span>
             </div>
             <div>
-              <Button variant="cosmic" asChild>
-                <a
-                  href="https://www.roblox.com/users/profile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2"
-                >
-                  <MessageCircle className="w-4 h-4" />
-                  Send Message
-                </a>
-              </Button>
+            <Button variant="cosmic" asChild>
+              <a
+                href="https://www.roblox.com/users/2625277818/profile#!#about"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <MessageCircle className="w-4 h-4" />
+                Send Message
+              </a>
+            </Button>
             </div>
           </div>
 

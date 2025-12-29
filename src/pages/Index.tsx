@@ -1,11 +1,33 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { StarField } from "@/components/StarField";
+import { Header } from "@/components/Header";
+import { HeroSection } from "@/components/HeroSection";
+import { AboutSection } from "@/components/AboutSection";
+import { SessionsSection } from "@/components/SessionsSection";
+import { BookingSection } from "@/components/BookingSection";
+import { HoursSection } from "@/components/HoursSection";
+import { RulesSection } from "@/components/RulesSection";
+import { FAQSection } from "@/components/FAQSection";
+import { ContactSection } from "@/components/ContactSection";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen cosmic-gradient relative overflow-hidden">
+      {/* Animated star background */}
+      <StarField />
+      
+      {/* Main content */}
+      <div className="relative z-10">
+        <Header />
+        <HeroSection />
+        <AboutSection />
+        <SessionsSection />
+        <BookingSection />
+        <HoursSection />
+        <RulesSection />
+        <FAQSection />
+        <ContactSection />
+        <Footer />
       </div>
     </div>
   );
